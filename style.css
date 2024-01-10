@@ -1,59 +1,52 @@
-html {
-    height: 100%;
-}
-
 *,
 *::after,
 *::before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    font-family: 'Outfit';
+    min-height: 100vh;
     height: inherit;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    max-width: 1440px;
     background-color: hsl(212, 45%, 89%);
     font-family: Outfit;
-    font-style: normal;
-    box-sizing: border-box;
 }
 
 main {
-    width: 320px;
+    max-width: 20rem;
     background-color: white;
     padding: 16px;
-    box-sizing: inherit;
     border-radius: 20px;
 }
 
 .qr_img {
-    width: 288px;
+    display: block;
+    max-width: 100%;
     border-radius: 10px;
     margin-bottom: 24px;
 }
 
 .slogan {
-    text-align: center;
-    font-size: 22px;
+
+    font-size: 1.375rem;
     font-weight: 700px;
     margin-bottom: 16px;
 }
 
 .description {
-    font-family: 'Outfit';
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
+    font-size: 0.938rem;
     color: hsl(220, 15%, 55%);
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    font-style: normal;
-    width: 256px;
+    max-width: 25ch;
 }
 
 footer {
@@ -63,8 +56,7 @@ footer {
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+    font-size: 0.688rem;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
